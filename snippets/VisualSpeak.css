@@ -4,7 +4,7 @@
     --visual-speak-width: 16px;
 }
 /* Mute */
-#app-mount:has(button[aria-checked="true"][aria-label="Mute"]):has(div[class^="rtcConnectionStatus"])::before {
+#app-mount:has(section[class^="panels"] button:first-child[aria-checked="true"]):has(div[class^="rtcConnectionStatus"])::before {
     content: "";
     position: absolute;
     width: var(--visual-speak-width);
@@ -13,7 +13,7 @@
     left: 0;
     z-index: 9999;
 }
-#app-mount:has(button[aria-checked="true"][aria-label="Mute"]):has(div[class^="rtcConnectionStatus"])::after {
+#app-mount:has(section[class^="panels"] button:first-child[aria-checked="true"]):has(div[class^="rtcConnectionStatus"])::after {
     content: "";
     position: absolute;
     width: var(--visual-speak-width);
