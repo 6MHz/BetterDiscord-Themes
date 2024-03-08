@@ -1,0 +1,28 @@
+/* Normal */
+body:hover div[class^="appAsidePanelWrapper"]:has(
+    section[class^="panels"]
+        button:nth-child(2)[aria-checked="true"]
+),
+div[class^="appAsidePanelWrapper"]:has(
+    div[class*="rtcConnectionStatus"] /* voice connected */
+) {
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 100%,
+        0 100%
+    ) !important;
+}
+/* Break */
+div[class^="appAsidePanelWrapper"]:has(
+    section[class^="panels"]
+        button:nth-child(2)[aria-checked="true"]
+) {
+    transition: clip-path 500ms;
+    clip-path: polygon(
+        0 50%,
+        100% 50%,
+        100% 50%,
+        0 50%
+    );
+}
