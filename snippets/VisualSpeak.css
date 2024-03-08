@@ -1,0 +1,43 @@
+:root {
+    --visual-speak-mute-color: red;
+    --visual-speak-speaking-color: lime;
+    --visual-speak-width: 16px;
+}
+/* Mute */
+#app-mount:has(button[aria-checked="true"][aria-label="Mute"]):has(div[class^="rtcConnectionStatus"])::before {
+    content: "";
+    position: absolute;
+    width: var(--visual-speak-width);
+    background: linear-gradient(90deg, var(--visual-speak-mute-color) 25%, #0000);
+    height: 100vh;
+    left: 0;
+    z-index: 9999;
+}
+#app-mount:has(button[aria-checked="true"][aria-label="Mute"]):has(div[class^="rtcConnectionStatus"])::after {
+    content: "";
+    position: absolute;
+    width: var(--visual-speak-width);
+    background: linear-gradient(90deg, #0000, var(--visual-speak-mute-color) 85%);
+    height: 100vh;
+    right: 0;
+    z-index: 9999;
+}
+/* Speaking */
+#app-mount:has(section[class^="panels"] div[class^="avatarSpeaking"])::before {
+    content: "";
+    position: absolute;
+    width: var(--visual-speak-width);
+    background: linear-gradient(90deg, var(--visual-speak-speaking-color) 25%, #0000);
+    height: 100vh;
+    left: 0;
+    z-index: 9999;
+}
+#app-mount:has(section[class^="panels"] div[class^="avatarSpeaking"])::after {
+    content: "";
+    position: absolute;
+    width: var(--visual-speak-width);
+    background: linear-gradient(90deg, #0000, var(--visual-speak-speaking-color) 85%);
+    height: 100vh;
+    right: 0;
+    z-index: 9999;
+}
