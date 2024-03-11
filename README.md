@@ -12,7 +12,7 @@
 - ## code
 
 ```css
-@import url(https://sixghz.github.io/BetterDiscord-Themes/snippets/VisualSpeak.css);
+@import url(https://6mhz.github.io/BetterDiscord-Themes/snippets/VisualSpeak.css);
 ```
 [[Source](/snippets/VisualSpeak.css)]
 
@@ -33,7 +33,7 @@
 - ## code
 
 ```css
-@import url(https://sixghz.github.io/BetterDiscord-Themes/snippets/BreakMode.css);
+@import url(https://6mhz.github.io/BetterDiscord-Themes/snippets/BreakMode.css);
 ```
 [[Source](/snippets/BreakMode.css)]
 
