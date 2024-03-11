@@ -14,6 +14,7 @@
 ```css
 @import url(https://sixghz.github.io/BetterDiscord-Themes/snippets/VisualSpeak.css);
 ```
+[[Source](/snippets/VisualSpeak.css)]
 
 - ## preview
 
@@ -34,6 +35,7 @@
 ```css
 @import url(https://sixghz.github.io/BetterDiscord-Themes/snippets/BreakMode.css);
 ```
+[[Source](/snippets/BreakMode.css)]
 
 - ## preview
 
